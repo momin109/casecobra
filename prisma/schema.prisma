@@ -15,14 +15,9 @@ datasource db {
 
 
 model Configuration {
-  id              String        @id @default(cuid())
+  id              String  @id @default(cuid())
   width           Int
   height          Int
   imageUrl        String
-  color           CaseColor?
-  model           PhoneModel?
-  material        CaseMaterial?
-  finish          CaseFinish?
-  croppedImageUrl String?
-  Order           Order[]
+ croppedImageUrl String?
 }
